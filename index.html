@@ -1,0 +1,322 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sparsh Dixit — Frontend Developer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EmailJS (for contact form) -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script> (function(){ emailjs.init("YOUR_EMAILJS_USER_ID"); })(); </script>
+</head>
+<body>
+  <!-- Page wrapper -->
+  <div class="page">
+
+    <!-- Header / Nav -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#hero">
+          <div class="logo-mark" aria-hidden="true"><i class="fa-solid fa-meteor"></i></div>
+          <div class="logo-text">Sparsh Dixit</div>
+        </a>
+
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button id="theme-toggle" class="btn icon-btn" aria-label="Toggle dark / light mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <button id="hamburger" class="btn hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1 class="hero-title">Sparsh Dixit <span class="accent">.</span></h1>
+          <h2 class="hero-subtitle"><span id="type-text" aria-live="polite"></span></h2>
+
+          <p class="hero-desc">
+            I build sleek & fast user interfaces — modern front-end development, design systems, and delightful UX.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#contact">Hire Me</a>
+            <a class="btn ghost" href="#projects">See Projects</a>
+          </div>
+
+          <div class="social small">
+            <a href="#" aria-label="LinkedIn" class="https://www.linkedin.com/in/sparsh-d-17805b329/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub" class="https://github.com/sparshdixit07"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Twitter" class="https://x.com/PtSparshDixit?t=Kr5ESpI4Fg2AW5EG_sCDBQ&s=09"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        </div>
+        <div class="hero-photo" role="img" aria-label="Portrait of Sparsh Dixit">
+          <div class="glass">
+            <img src="img1.jpeg" alt="Your portrait">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-header">
+          <h3>About Me</h3>
+          <p>Short intro & personal details</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo">
+            <div class="glass small">
+              <img src="" alt="">
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h4>I'm Sparsh Dixit, a frontend developer & UI/UX designer</h4>
+            <p>
+              I specialize in building responsive, accessible, and high-performance web interfaces.
+              I love micro-interactions, clean code, and solving complex UI problems with elegant solutions.
+            </p>
+
+            <ul class="personal-details">
+              <li><strong>Location:</strong> Gaziabad, India</li>
+              <li><strong>Email:</strong> <a href="ptsparshdixit@gmail.com">ptsparshdixit@gmail.com</a></li>
+              <li><strong>Experience:</strong> Fresher</li>
+              <li><strong>Role:</strong> Web Developer</li>
+            </ul>
+
+            <div class="about-actions">
+              <a class="btn primary" href="#contact">Work with me</a>
+              <a class="btn ghost" href="resume1.pdf" download>Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-header">
+          <h3>Skills</h3>
+          <p>Tools & technologies I use</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card" data-animate>
+            <div class="skill-head">
+              <div>
+                <h4>Frontend</h4>
+                <p class="muted">HTML, CSS, JS</p>
+              </div>
+              <i class="fa-brands fa-html5 fa-2x"></i>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-progress="95" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-animate>
+            <div class="skill-head">
+              <div>
+                <h4>React & Components</h4>
+                <p class="muted">Design systems</p>
+              </div>
+              <i class="fa-brands fa-react fa-2x"></i>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-progress="85" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-animate>
+            <div class="skill-head">
+              <div>
+                <h4>UI / UX</h4>
+                <p class="muted">Figma, prototypes</p>
+              </div>
+              <i class="fa-solid fa-pencil-ruler fa-2x"></i>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-progress="80" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-animate>
+            <div class="skill-head">
+              <div>
+                <h4>Performance</h4>
+                <p class="muted">Optimization & accessibility</p>
+              </div>
+              <i class="fa-solid fa-rocket fa-2x"></i>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-progress="85" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-header">
+          <h3>Projects</h3>
+          <p>Selected work — click for live demo / repo</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project card -->
+          <article class="project-card" data-animate>
+            <div class="project-media">
+              <img src="cal.png" alt="Project screenshot">
+            </div>
+            <div class="project-body">
+              <h4>Project Title</h4>
+              <p class="muted">Short description of what you built and tech used.</p>
+              <div class="project-actions">
+                <a class="btn small" href="https://sparshdixit07.github.io/simple-calculator/" target="_blank" rel="noopener">Live</a>
+                <a class="btn ghost small" href="https://github.com/sparshdixit07/simple-calculator" target="_blank" rel="noopener">Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Repeat for other projects (3+) -->
+          <article class="project-card" data-animate>
+            <div class="project-media">
+              <img src="game.png"alt="Project screenshot 2">
+            </div>
+            <div class="project-body">
+              <h4>Design System</h4>
+              <p class="muted">Reusable components, tokens & documentation.</p>
+              <div class="project-actions">
+                <a class="btn small" href="https://sparshdixit07.github.io/Pen-Paper-Scissor-Game/" target="_blank" rel="noopener">Live</a>
+                <a class="btn ghost small" href="https://github.com/sparshdixit07/Pen-Paper-Scissor-Game.git" target="_blank" rel="noopener">Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-animate>
+            <div class="project-media">
+              <img src="css.png" alt="Project screenshot 3">
+            </div>
+            <div class="project-body">
+              <h4>Performance Audit</h4>
+              <p class="muted">Realtime metrics & improvements implemented.</p>
+              <div class="project-actions">
+                <a class="btn small" href=" https://sparshdixit07.github.io/Stylish-circle/" target="_blank" rel="noopener">Live</a>
+                <a class="btn ghost small" href="https://github.com/sparshdixit07/Stylish-circle.git" target="_blank" rel="noopener">Repo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header">
+          <h3>Contact</h3>
+          <p>Let's build something great — send me a message</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-animate>
+            <h4>Get in touch</h4>
+            <p class="muted">Available for freelance.</p>
+
+            <ul class="contact-list">
+              <li><i class="fa-solid fa-location-dot"></i> Gaziabad, India</li>
+              <li><i class="fa-regular fa-envelope"></i> <a href="mailto:youremail@example.com">ptsparshdixit@gmail.com</a></li>
+              <li><i class="fa-solid fa-phone"></i> <a href="tel:6386717994">6386717994</a></li>
+            </ul>
+
+            <div class="social">
+              <a class="social-link" href="https://www.linkedin.com/in/sparsh-d-17805b329/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a class="social-link" href="https://github.com/sparshdixit07" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a class="social-link" href="https://x.com/PtSparshDixit?t=Kr5ESpI4Fg2AW5EG_sCDBQ&s=09" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form" data-animate>
+            <!-- IMPORTANT: replace serviceID/templateID/userID in script.js and in emailjs.init above -->
+            <label>
+              <span>Name</span>
+              <input type="text" name="user_name" required placeholder="Your full name"required>
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="user_email" required placeholder="you@example.com"required>
+            </label>
+
+            <label>
+              <span>Subject</span>
+              <input type="text" name="subject" required placeholder="Brief subject"required>
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="6" required placeholder="Write your message..."required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send Message</button>
+              <button type="reset" class="btn ghost">Reset</button>
+            </div>
+
+            <div id="form-status" class="form-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Sparsh Dixit. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="privacy.html" class="muted">Privacy</a>
+          <a href="terms.html" class="muted">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- .page -->
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>
