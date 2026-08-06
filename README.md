@@ -115,7 +115,7 @@ Contact Section
 **Sparsh Dixit**
 
 - GitHub: https://github.com/sparshdixit07
-- LinkedIn: https://linkedin.com/in/your-linkedin
+- LinkedIn: https://linkedin.com/in/sparsh-dixit
 - Email: your-email@example.com
 
 ---
